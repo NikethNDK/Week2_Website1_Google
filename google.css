@@ -239,6 +239,9 @@ button.btn-2:hover{
         height: 25px;
         margin: 0px;
 }
+.follow-icon img:hover{
+    background-color: #5f6368d3;
+}
 .follow-button{
     margin: 0px;
     /* line-height: 29px;*/
@@ -290,12 +293,19 @@ button.btn-2:hover{
         padding: 0;       /* Remove the default padding */
         margin: 0;        /* Remove the default margin */
     }
-ul li a{
-  
+ul li a{  
     text-decoration: none;
     color: #5F6368;
 }
-
+.accordian-decoration ul{
+    list-style: none; /* Remove the bullet points */
+    padding: 0;       /* Remove the default padding */
+    margin: 0;        /* Remove the default margin */
+}
+.accordion-item button {
+  background-color: #F8F9FA;; /* Light gray background */
+  border: none;
+}
 .custom-li-spacing li{
     margin-bottom: 18px;
 }
@@ -339,25 +349,4 @@ ul li a{
 
 
 
-
-
-
-/* footer element tags */
-.footer-tags{
-    display: flex;
-    gap: 25px;
-    padding: 40px 0px 8px;
-    ;
-}
-.footer-tags img{
-    width: 75px;
-    height: 29px;
-}
-.footer-tags a{
-    text-decoration: none;
-    color:#5F6368;
-    font-weight: 500;
-    font-size: clamp(6px,6vw,16px);
-    
-}
 
