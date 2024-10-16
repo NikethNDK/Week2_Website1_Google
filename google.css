@@ -1,0 +1,363 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'GoogleSans'; 
+    src: url('font/ProductSans-Regular.woff') format('opentype'); 
+}
+
+body{
+    font-family:'GoogleSans',Arial, Helvetica, sans-serif;
+
+}
+/*Classes used for the navbar to control the behaviour when the screen size reduced*/
+ @media (max-width: 992px) {
+        .navbar .container-fluid.d-flex {
+        justify-content: flex-start;
+        gap: 25px;
+        }
+ }
+.navbar{
+    background-color: white;
+    
+}
+.nav-item a{
+    padding: 18px;
+    font-weight: 500;
+}
+@media (max-width: 576px) {
+.border-grey {
+    border-bottom: 1px solid lightgray; /* Adjust thickness and color */
+}
+}
+.nav-item a:hover {
+    background-color: rgba(241, 239, 239, 0.573);
+    border-radius: 4px;
+}
+.navbar .nav-item a.active:hover {
+    background-color: inherit; /* Keeps the color of the active link unchanged on hover */
+    border-radius: 0px;
+}
+.navbar-nav .nav-link.active{
+    border-bottom: 2px solid blue; /* Blue bottom border for active state */
+}
+/*End of Navigation bar classes*/
+
+/* main heading  */
+.container{
+    margin-top:3rem;
+}
+
+
+.container-head h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight:100;
+    font-family:'GoogleSans',Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+/* for large screen  */
+.container-head{
+    margin: 10px 190px;
+    padding: 2px 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-head {
+        margin: 10px 40px;
+        padding: 2px 10px;
+    }
+    .container-head h1 {
+        font-size: 1.2rem; 
+    }
+}
+
+/* For medium screens */
+@media (max-width: 768px) {
+    .container-head {
+        margin: 10px 40px;
+        padding: 2px 10px;
+    }
+    .container-head h1 {
+        font-size: 1.2rem; 
+    }
+}
+
+/* For small screens */
+@media (max-width: 576px) {
+    .container-head {
+        margin: 10px 0px;
+        padding: 2px 20px;
+    }
+    .container-head h1 {
+        font-size: 1.3rem; /* Further adjust size for small screens */
+    }
+}
+.blue{
+    color: #4285F4;
+}
+.red{
+    color: #EA4335;
+}
+.green{
+    color: #34a853;
+}
+.orange{
+    color: #e37400;
+}
+
+/* postioning and media quries for the paragraph under the first image  */
+.heading-h3{
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: 400;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .heading-h3{
+        text-align: center;
+        margin-top: 3rem;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+/* For medium screens */
+@media (max-width: 768px) {
+    .heading-h3{
+        text-align: center;
+        margin-top: 3rem;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+/* For small screens */
+@media (max-width: 576px) {
+    .heading-h3{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+}
+
+.learnbtn button{
+    color:#4285F4;
+}
+.learnbtn button:hover{
+    color:#4285F4;
+}
+
+.responsive-heading {
+    font-weight: 400;
+    font-size: clamp(1rem, 3vw + 1.5rem, 4rem);
+    margin-top: 4rem;
+}
+
+/* two buttons  */
+
+button.btn-1 , button.btn-2{
+    padding: 14px 24px;
+    font-weight: 500;
+}
+
+button.btn-2:hover{
+    background-color: rgba(177, 210, 220, 0.378);
+    color: #4285F4;
+}
+@media (max-width: 642px) {
+    .button-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+}
+.responsive-heading-1 {
+    font-weight: 400;
+    font-size: clamp(0.3rem, 3vw + 1rem, 3.8rem);
+    margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* first 3 cards in the body  */
+.google-features1 img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 6px;
+}
+
+.text-position a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.text-position a p{
+    color: #4285F4;
+}
+.text-position a p:hover{
+    color: #1658c1;
+}
+/* <!--End of first row of google features--> */
+.footer-part{
+    margin-top: 50px;
+    background-color: #F8F9FA;
+}
+
+/* socialmedia icons  */
+.follow-icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0px;
+}
+.follow-icon-position{
+    border-bottom: 1px solid lightgrey;
+}
+.icons{
+        width: 30px;
+        height: 25px;
+        margin: 0px;
+}
+.follow-button{
+    margin: 0px;
+    /* line-height: 29px;*/
+    font-size: clamp(6px,6vw,17px);
+    font-weight: 500;
+}
+@media (min-width:767px){
+    .test{
+    align-items: center;
+    }
+}
+@media (max-width: 767px) {
+    .icon-container {
+        padding: 5px;
+        flex-direction: column; 
+        gap: 5px;
+    }
+    .follow-icon{
+        order: 0;
+    }
+    .follow-icon1{
+        order: 1;
+    }
+
+}
+@media (max-width: 600px) {
+    .follow-us{
+        display: none;
+    }
+}
+
+/* end of social media icons */
+
+/* sercives available */
+ @media (max-width: 1024px) {
+        .three-column-layout {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .accordion-layout {
+            display: none;
+        }
+    }
+
+.service-headings ul {
+        list-style: none; /* Remove the bullet points */
+        padding: 0;       /* Remove the default padding */
+        margin: 0;        /* Remove the default margin */
+    }
+ul li a{
+  
+    text-decoration: none;
+    color: #5F6368;
+}
+
+.custom-li-spacing li{
+    margin-bottom: 18px;
+}
+
+
+.container-border{
+    border-bottom: 1px solid lightgray;
+}
+
+.service-headings h3{
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.service-headings{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 24px;
+}
+
+.footer-styling{
+    color: #5F6368;
+}
+
+.footer-styling:hover{
+    color:#3e3f41;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer element tags */
+.footer-tags{
+    display: flex;
+    gap: 25px;
+    padding: 40px 0px 8px;
+    ;
+}
+.footer-tags img{
+    width: 75px;
+    height: 29px;
+}
+.footer-tags a{
+    text-decoration: none;
+    color:#5F6368;
+    font-weight: 500;
+    font-size: clamp(6px,6vw,16px);
+    
+}
+
